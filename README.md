@@ -55,7 +55,7 @@ BasketballVideo/
 │   └── test/     # 对应测试集的 txt 标签
 
 └── BasketballActionRecognition_data.yaml  # 数据集配置文件
-```text
+```
 ###3.配置文件（Config）
 
 BasketballActionRecognition_data.yaml内容示例：
@@ -66,4 +66,5 @@ train: BasketballVideo/images/train
 val: BasketballVideo/images/val
 nc: 5
 names: ['dribble', 'shoot', 'run', 'stand', 'defence']
+
 

@@ -1,18 +1,18 @@
 # 🏀 智慧篮球：基于 AI 的实时动作识别系统 (Smart Basketball Action Recognition)
 
-> **BIYOO-CHATPPT TEAM** | 22级软件工程1，2班队
+> **BIYOO-CHATPPT TEAM** | 22级软件工程1班队
 > *致力于通过物联网与人工智能技术，为篮球爱好者提供个性化的训练反馈与技能提升方案。*
 
 ---
 
 ## 📖 项目简介 (Introduction)
 
-[cite_start]本项目名为 **“智慧篮球” (Smart Basketball)**，旨在解决传统篮球训练中聘请专业摄影师和剪辑师费用高昂的问题 [cite: 17][cite_start]。通过在篮球场馆部署智能摄像头并结合物联网技术，系统能够自动捕捉运动员的动作细节，利用 AI 算法进行动作识别与分析，最终通过手机 App 或公众号向用户展示可视化数据与优质视频 [cite: 16, 26, 27]。
+本项目名为 **“智慧篮球” (Smart Basketball)**，旨在解决传统篮球训练中聘请专业摄影师和剪辑师费用高昂的问题 。通过在篮球场馆部署智能摄像头并结合物联网技术，系统能够自动捕捉运动员的动作细节，利用 AI 算法进行动作识别与分析，最终通过手机 App 或公众号向用户展示可视化数据与优质视频。
 
 核心价值：
-* [cite_start]**低成本普及**：费用包含在场馆使用费中，大众可接受 [cite: 18, 19]。
-* [cite_start]**AI 赋能**：自动识别动作事件，支持 2D 关键点提取与 3D 重建 [cite: 26, 31, 32]。
-* [cite_start]**数据可视化**：提供精准的运动效果分析与反馈 [cite: 27]。
+* **低成本普及**：费用包含在场馆使用费中，大众可接受 。
+* **AI 赋能**：自动识别动作事件，支持 2D 关键点提取与 3D 重建 。
+* **数据可视化**：提供精准的运动效果分析与反馈 。
 
 ---
 
@@ -20,11 +20,11 @@
 
 本项目基于深度学习目标检测框架开发，主要包含以下组件：
 
-* [cite_start]**核心算法**: YOLOv5 (You Only Look Once) [cite: 39, 53]
-* [cite_start]**基础模型**: 选用 `YOLOv5x6` 或 `best.pt` 进行微调 [cite: 54, 55]
-* [cite_start]**GUI 框架**: Python Qt (`PyQt` / `PySide`) 
-* [cite_start]**硬件环境**: NVIDIA GeForce RTX 4090 (推荐) 
-* [cite_start]**数据标注**: LabelImg [cite: 49]
+* **核心算法**: YOLOv5 (You Only Look Once)
+* **基础模型**: 选用 `YOLOv5x6` 或 `best.pt` 进行微调
+* **GUI 框架**: Python Qt (`PyQt` / `PySide`) 
+* **硬件环境**: NVIDIA GeForce RTX 4090 (推荐) 
+* **数据标注**: LabelImg 
 
 ---
 
@@ -33,7 +33,7 @@
 我们需要创建一个自定义数据集来识别特定的篮球动作。
 
 ### 1. 动作类别 (Classes)
-[cite_start]根据 `BasketballActionRecognition_data.yaml` 配置文件，我们将动作定义为以下 5 类:
+根据 `BasketballActionRecognition_data.yaml` 配置文件，我们将动作定义为以下 5 类:
 * `dribble` (运球)
 * `shoot` (投篮)
 * `run` (跑动)
@@ -41,7 +41,7 @@
 * `defence` (防守)
 
 ### 2. 目录结构 (Directory Structure)
-[cite_start]请按照以下结构组织您的数据[cite: 50, 51, 52]:
+请按照以下结构组织您的数据:
 
 ```text
 BasketballVideo/
@@ -61,10 +61,12 @@ BasketballVideo/
 BasketballActionRecognition_data.yaml内容示例：
 
 YAML
-
+'''text
 train: BasketballVideo/images/train
 val: BasketballVideo/images/val
 nc: 5
-names: ['dribble', 'shoot', 'run', 'stand', 'defence']
+names: 
+['dribble', 'shoot', 'run', 'stand', 'defence']
+'''
 
 

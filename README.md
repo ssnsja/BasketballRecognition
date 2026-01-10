@@ -61,14 +61,15 @@ BasketballVideo/
 
 BasketballActionRecognition_data.yaml内容示例：
 
-YAML
-'''text
+
+'''yaml
 train: BasketballVideo/images/train
 val: BasketballVideo/images/val
 nc: 5
 names: 
 ['dribble', 'shoot', 'run', 'stand', 'defence']
 '''
+
 
 
 

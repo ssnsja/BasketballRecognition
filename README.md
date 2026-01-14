@@ -69,6 +69,9 @@ nc: 5
 names: 
 ['dribble', 'shoot', 'run', 'stand', 'defence']
 ```
+### 4.实际演示效果
+<img width="626" height="691" alt="屏幕截图 2026-01-14 155741" src="https://github.com/user-attachments/assets/89ab2781-1640-4c69-8c1c-de37c1ecce67" />
+
 
 
 
